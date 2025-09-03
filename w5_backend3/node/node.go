@@ -41,7 +41,6 @@ func (l *LinkedList) Remove(value int) {
 	}
 }
 
-// Печать списка
 func (l *LinkedList) Print() {
 	curr := l.Head
 	for curr != nil {
@@ -58,9 +57,9 @@ func main() {
 	list.Add(2)
 	list.Add(1)
 	fmt.Print("После добавления: ")
-	list.Print() // 1 2 3
+	list.Print()
 
 	list.Remove(2)
 	fmt.Print("После удаления 2: ")
-	list.Print() // 1 3
+	list.Print()
 }
